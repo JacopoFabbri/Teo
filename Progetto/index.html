@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Megan</title>
+    <style>
+        body {
+            background-image: url(Img/back.jpg);
+            width: 650px;
+        }
+        
+        img {
+            padding: 0%;
+            margin: 0%;
+            border: 0%;
+            max-width: 100%;
+            max-height: 100%;
+        }
+        
+        button {
+            margin: 0%;
+            padding: 0%;
+            width: 253px;
+            height: 54px;
+            background-color: none;
+            border: none;
+        }
+        
+        .colonna {
+            float: left;
+        }
+        
+        .colonna-2 {
+            margin-left: 1%;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        li {
+            padding-top: 2%;
+            padding-bottom: 2%;
+            margin: 0%;
+        }
+        
+        iframe {
+            border: none;
+            width: 300px;
+            height: 500px;
+            border: 1cm;
+        }
+        
+        .gif {
+            width: 253px;
+            height: 120px;
+        }
+        
+        body {
+            text-align: center;
+        }
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="row" style="margin: 0;">
+        <div class="colonna">
+            <iframe src="MyStory.html" id="iframe"></iframe>
+        </div>
+        <div class="colonna-2">
+            <ul>
+                <li><button id="aboutMe"><img src="Img/AboutMe.png" alt=""></button></li>
+                <li><button id="myStory"><img src="Img/MyStory.png" alt=""></button></li>
+                <li><img src="Img/laGif.webp" alt="" class="gif"></li>
+                <li><button id="followers"><img src="Img/Followers.png" alt=""></button></li>
+                <li><button id="friends"><img src="Img/Friends.png" alt=""></button></li>
+            </ul>
+        </div>
+    </div>
+    <div class="row" style="margin: 0;">
+        <div id="carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="Img/laGif2.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="Img/12.jpg" alt="Second slide">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="margin: 0;margin-top: 50px;">
+        <button id="Outfit" style="margin-left: 1px;margin-right: 142px;"><img src="Img/Outfit.png" alt=""></button>
+        <button id="OffRules"><img src="Img/OffRules.png" alt=""></button>
+    </div>
+    <div class="row" style="margin: 0;margin-top: 10px;">
+        <iframe src="Outfit.html" id="iframe2" style="width: 650px;height: 500px;"></iframe>
+    </div>
+    <script>
+        document.getElementById("aboutMe").onclick = function() {
+            document.getElementById('iframe').src = "AboutMe.html";
+        }
+        document.getElementById("myStory").onclick = function() {
+            document.getElementById('iframe').src = "MyStory.html";
+        }
+        document.getElementById("followers").onclick = function() {
+            document.getElementById('iframe').src = "Followers.html";
+        }
+        document.getElementById("friends").onclick = function() {
+            document.getElementById('iframe').src = "Friends.html";
+        }
+        document.getElementById("Outfit").onclick = function() {
+            document.getElementById('iframe2').src = "Outfit.html";
+        }
+        document.getElementById("OffRules").onclick = function() {
+            document.getElementById('iframe2').src = "OffRules.html";
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+
+</html>
